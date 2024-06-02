@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: #eaeaea;
+        color: #333;
+      }
+      .container {
+        background-color: white;
+        width: 85%;
+        margin: 0 auto;
+      }
+      h1 {
+        padding: 41.44px 20px 21.44px 20px;
+        margin: 0;
+      }
+      ul {
+        padding: 0 20px 16px 20px;
+        margin: 0;
+      }
+      li {
+        display: inline-block;
+      }
+      a {
+        color: rgb(100, 100, 100);
+        text-decoration: none;
+        display: inline-block;
+      }
+      a:hover {
+        color: rgb(100, 100, 100);
+      }
+      a::after {
+        content: "";
+        display: block;
+        padding-bottom: 0.5rem;
+        border-bottom: 0.1rem solid rgb(100, 100, 100);
+        transform: scaleX(0);
+        transition: 0.2s linear;
+      }
+
+      a:hover::after {
+        transform: scaleX(0.5);
+      }
+      .hero {
+        width: 100%;
+        height: 300px;
+        background-image: url(ian.jpg);
+        background-size: cover;
+        background-position: center;
+        /* border-top: 1px solid lightskyblue;
+        border-bottom: 1px solid salmon; */
+      }
+      .content {
+        padding: 20px;
+      }
+      .content h2 {
+        margin: 0;
+      }
+      .content .penulis {
+        margin-top: 10px;
+      }
+      .content .main {
+        width: 70%;
+        margin-top: 30px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        float: left;
+        border-right: 1px solid rgb(197, 197, 197);
+      }
+      .content .main p,
+      .footer p,
+      .sidebar p {
+        font-size: small;
+      }
+      .content .main h2 + p {
+        font-size: medium;
+      }
+      .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 0.05px;
+      }
+      .cf:before,
+      .cf:after {
+        content: " ";
+        display: table;
+      }
+
+      .cf:after {
+        clear: both;
+      }
+      .cf {
+        *zoom: 1;
+      }
+      .sidebar {
+        width: 30%;
+        float: right;
+        margin-top: 30px;
+        padding-left: 20px;
+        box-sizing: border-box;
+      }
+      .sidebar h3 {
+        margin-top: 0;
+      }
+      .sidebar img {
+        margin-bottom: 10px;
+        margin-right: 15px;
+        float: left;
+        width: 70px;
+        border-radius: 100%;
+      }
+      .sidebar p,
+      .sidebar a {
+        font-size: 12px;
+      }
+      .sidebar ul {
+        padding: 0;
+        margin: 0;
+      }
+      .sidebar li {
+        display: block;
+      }
+      @media screen and (max-width: 768px) {
+        .container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Website</h1>
+      <ul>
+        <li><a href="#">Home</a> |</li>
+        <li><a href="#">About</a> |</li>
+        <li><a href="#">Products</a> |</li>
+        <li><a href="#">Services</a> |</li>
+        <li><a href="#">Contact</a> |</li>
+      </ul>
+      <div class="hero">
+        <!-- <img src="ian.jpg" /> -->
+      </div>
+      <div class="content cf">
+        <div class="main">
+          <h2>Judul Artikel</h2>
+          <p class="penulis">
+            ditulis oleh <a href="#">Fitrian Mubarok</a>. pada 26 Mei 2024
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id natus
+            hic sint placeat autem, qui maiores! Autem dolorum ad officia earum
+            quas assumenda ea unde, fugiat, similique sequi quo quod.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
+            beatae voluptate facere sunt ex nihil repellat iure quaerat tempore
+            quas odit modi cum rem numquam labore, eius facilis, exercitationem,
+            reprehenderit porro dicta nisi incidunt quos non explicabo.
+            Doloremque illo iusto aut, perferendis labore delectus, eveniet
+            incidunt eaque dolore tempora, sit saepe nihil consectetur repellat.
+            Esse fugit quod vero perspiciatis maiores cumque, ex sint laudantium
+            praesentium fugiat voluptatibus facilis officia vel fuga quis totam
+            dolores dolorum quasi nesciunt? A fugiat, enim officia eligendi
+            dolore non ducimus culpa earum, harum sapiente ratione sequi veniam
+            quae eum tempore animi numquam ullam esse perspiciatis.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+            enim id modi, possimus facere nisi eveniet libero saepe autem
+            perspiciatis doloribus blanditiis. Cupiditate et autem adipisci
+            velit, harum expedita? Soluta sit distinctio molestiae provident
+            repellat architecto illum maxime rem tempora quibusdam aliquam quia,
+            explicabo quasi sint cupiditate eos magnam eius recusandae ex
+            dignissimos placeat minus praesentium. Veniam doloribus vitae
+            nesciunt nulla officiis maxime dolorem dignissimos id, excepturi
+            quibusdam veritatis, placeat fugiat earum asperiores aliquam a
+            aliquid necessitatibus, quam debitis! Dolorem.
+          </p>
+        </div>
+        <div class="sidebar">
+          <h3>Tentang Penulis</h3>
+          <img src="pp1.jpg" alt="Fitrian Mubarok" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+            minima sunt, fuga quo perspiciatis aliquam, harum quia facere libero
+            aut dolorem architecto aperiam esse dicta eligendi non.
+          </p>
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="copy">Copyright 2024. Fitrian Mubarok</p>
+      </div>
+    </div>
+  </body>
+</html>
